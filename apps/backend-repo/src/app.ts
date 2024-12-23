@@ -17,7 +17,6 @@ app.use(cors(corsOptions));
 app.use(json());
 app.use(urlencoded({ extended: true }));
 app.use(cookieParser());
-// app.use(authMiddleWare);
 app.use('/users', authMiddleWare, userRouter);
 
 export const api =  https.onRequest(app);

@@ -1,7 +1,7 @@
 import { auth } from "@/config/firebaseConfig";
 import { signInWithEmailAndPassword, signOut } from "firebase/auth";
 import Cookies from "js-cookie";
-import { User } from "@repo/ui/user";
+import { User } from "@repo/entities/user";
 
 export const firebaseLogin = async (email: string, password: string) => {
   const credential = await signInWithEmailAndPassword(auth, email, password);

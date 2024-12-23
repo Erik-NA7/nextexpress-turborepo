@@ -1,6 +1,6 @@
 import { Request, Response} from "express";
 import { FirebaseAuthError } from "firebase-admin/auth";
-import { User } from "@repo/ui/user";
+import { User } from "@repo/entities/user";
 import admin from "firebase-admin";
 import { ExpressUser } from "../entities/express.js";
 
